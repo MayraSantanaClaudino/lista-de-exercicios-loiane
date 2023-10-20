@@ -1,0 +1,25 @@
+//Calculo do salario baseado no valor ganho por hora e numero de horas trabalhadas
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double ganha_por_hora;
+		int horas;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Cálculo do salário");
+		System.out.println("Informe quanto voce ganha por hora");
+		ganha_por_hora = scan.nextDouble();
+		System.out.println("Informe o número de horas trabalhadas no mês");
+		horas = scan.nextInt();
+		
+		double salario = ganha_por_hora * horas;
+		System.out.printf("O salário é igual a %.2f", salario);
+		
+	}
+}

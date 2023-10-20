@@ -1,0 +1,23 @@
+//Cálculo do dobro da área do quadrado
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double lado;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Cálculo da área de um quadrado");
+		System.out.println("Informe o lado do quadrado");
+		lado = scan.nextDouble();
+		
+		double area = lado * lado;
+		double n2 = area * 2;
+		System.out.printf("O dobro da área do quadrado é igual a %.2f", n2);
+		
+	}
+}

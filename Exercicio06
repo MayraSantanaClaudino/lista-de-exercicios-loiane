@@ -1,0 +1,23 @@
+//Calculo da area de um circulo
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double raio;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Cálculo da área de um círculo");
+		System.out.println("Informe o raio do círculo");
+		raio = scan.nextDouble();
+		
+		double pi = 3.14;
+		double area = pi * raio * raio;
+		System.out.printf("A área do círculo é igual a %.2f", area);
+		
+	}
+}

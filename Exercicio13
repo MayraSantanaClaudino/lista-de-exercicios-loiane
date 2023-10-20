@@ -1,0 +1,40 @@
+//Cálculo do peso ideal
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double altura;
+		char sexo;
+		double pesoIdeal = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Cálculo do peso ideal");
+		System.out.println("Informe sua altura");
+		altura = scan.nextDouble();
+		System.out.println("Informe seu sexo (F para Feminino e M para masculino)");
+		sexo = scan.next().charAt(0);
+		
+		if (sexo == 'F'){
+		    pesoIdeal = (62.1 * altura) - 44.7;
+		    System.out.printf("Seu peso ideal é %.2f\n", pesoIdeal);
+		} else if (sexo == 'M'){
+		    pesoIdeal =((72.7 * altura) - 58);
+		    System.out.printf("Seu peso ideal é %.2f\n", pesoIdeal);
+		}
+		
+		System.out.println("Informe seu peso");
+		double peso = scan.nextDouble();
+		
+		if (peso >= pesoIdeal){
+		    System.out.printf("Seu peso atual,%.2f, e seu peso ideal, %.2f\n", peso, pesoIdeal);
+		} else if (peso <= pesoIdeal){
+		    System.out.printf("Seu peso atual, %.2f, e seu peso ideal, %.2f\n", peso, pesoIdeal);
+		}
+		
+	}
+}

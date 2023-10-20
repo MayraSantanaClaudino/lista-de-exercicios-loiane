@@ -1,0 +1,35 @@
+//Cálculo do salário, INSS e IR
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double ganha_por_hora;
+		int horas;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Cálculo do salário");
+		System.out.println("Informe quanto voce ganha por hora");
+		ganha_por_hora = scan.nextDouble();
+		System.out.println("Informe o número de horas trabalhadas no mês");
+		horas = scan.nextInt();
+		
+		double salarioBruto = ganha_por_hora * horas;
+    double inss = (salarioBruto/100) * 8;
+    double sindicato = (salarioBruto/100) * 5;
+    double ir = (salarioBruto/100) * 11;
+    double totalDescontos = inss + sindicato + ir;
+    double salarioLiquido = salarioBruto - totalDescontos;
+    
+		System.out.printf("O salário bruto é %.2f", salarioBruto);
+		System.out.printf("O valor pago ao INSS é %.2f", inss);
+    System.out.printf("O valor pago ao sindicato é %.2f", sindicato);
+    System.out.printf("O salário líquido é %.2f", salarioLiquido);
+    System.out.printf("O valor do desconto aplicado ao salário é %.2f", totalDescontos);
+    
+	}
+}

@@ -1,0 +1,22 @@
+//Conversor de m para cm
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double n1;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Conversor de metros para centimetros");
+		System.out.println("Informe a medida em metros");
+		n1 = scan.nextDouble();
+		
+		double n2 = n1 * 100;
+		System.out.println("A medida em centímetros é " + n2);
+		
+	}
+}

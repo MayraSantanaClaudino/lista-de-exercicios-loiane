@@ -1,0 +1,28 @@
+//Sistema de rendimento de peixes de acordo com o peso
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		int peso;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Sistema de rendimento de peixes");
+		System.out.println("Informe o peso dos peixes");
+		peso = scan.nextInt();
+		
+		if (peso > 50){
+		    int excesso = (peso - 50);
+		    int multa = excesso * 4;
+		    System.out.println("O valor da multa a ser pago é " + multa);
+		} else if (peso < 50){
+		    System.out.println("O valor da multa a ser pago é 0");
+		} else if (peso == 50){
+		    System.out.println("O valor da multa a ser pago é 0");
+		}
+	}
+}

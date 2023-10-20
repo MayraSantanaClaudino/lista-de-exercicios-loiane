@@ -1,0 +1,21 @@
+//Faça um programa que peça um número inteiro e então mostre a mensagem "O número informado foi [número]"
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		int numero;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite um número inteiro");
+		
+		numero = scan.nextInt();
+		
+		System.out.println("O número informado foi " + numero);
+		
+	}
+}

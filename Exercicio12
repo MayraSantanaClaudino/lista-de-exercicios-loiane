@@ -1,0 +1,22 @@
+//Cálculo do peso ideal
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double altura;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Cálculo do peso ideal");
+		System.out.println("Informe sua altura");
+		altura = scan.nextDouble();
+		
+		double peso = ((72.7 * altura) - 58);
+		System.out.printf("Seu peso ideal é %.2f\n", peso);
+		
+	}
+}

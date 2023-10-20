@@ -1,0 +1,22 @@
+//Conversao de temperatura de Fahrenheit para Celsius
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double temperatura;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Conversor de temperatura");
+		System.out.println("Informe a temperatura em Fahrenheit");
+		temperatura = scan.nextDouble();
+		
+		double n2 = (5 * (temperatura - 32)/9);
+		System.out.printf("A temperatura em Celsius é igual a %.2f", n2);
+		
+	}
+}

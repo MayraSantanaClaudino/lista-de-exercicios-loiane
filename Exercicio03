@@ -1,0 +1,25 @@
+//Soma de dois números
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		int n1;
+		int n2;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Soma de dois números");
+		System.out.println("Digite um número inteiro");
+		n1 = scan.nextInt();
+		System.out.println("Digite outro número inteiro");
+		n2 = scan.nextInt();
+		
+		int soma = n1 + n2;
+		System.out.println("A soma dos números informados é " + soma);
+		
+	}
+}

@@ -1,0 +1,28 @@
+//Média bimestral de 4 números
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		double n1, n2, n3, n4;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Média bimestral");
+		System.out.println("Informe a primeira nota");
+		n1 = scan.nextDouble();
+		System.out.println("Informe a segunda nota");
+		n2 = scan.nextDouble();
+		System.out.println("Informe a terceira nota");
+		n3 = scan.nextDouble();
+		System.out.println("Informe a quarta nota");
+		n4 = scan.nextDouble();
+		
+		double média = (n1 + n2 + n3 + n4)/4;
+		System.out.println("A média bimestral é " + média);
+		
+	}
+}

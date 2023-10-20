@@ -1,0 +1,35 @@
+//Cálculos com dois números inteiros e um número real
+//Mayra Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		int n1;
+		int n2;
+		double n3;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite um número inteiro");
+		n1 = scan.nextInt();
+		System.out.println("Digite outro número inteiro");
+		n2 = scan.nextInt();
+		System.out.println("Digite um número real");
+		n3 = scan.nextDouble();
+		
+		//O produto do dobro do primeiro com metade do segundo
+		int r1 = ((n1 * 2) * (n2/2));
+		System.out.println(r1);
+		
+		//A soma do triplo do primeiro com o terceiro
+		double r2 = ((n1 * 3) + n3);
+		System.out.printf("%.2f\n", r2);
+		
+		//O terceiro elevado ao cubo
+		double r3 = n3 * n3 * n3;
+		System.out.printf("%.2f\n", r3);
+	}
+}
